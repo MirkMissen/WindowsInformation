@@ -1,0 +1,12 @@
+C:\Users\Bruger\source\repos\WindowsInformation\WindowsInformation\bin\Debug\WindowsInformation.dll
+C:\Users\Bruger\source\repos\WindowsInformation\WindowsInformation\bin\Debug\WindowsInformation.pdb
+C:\Users\Bruger\source\repos\WindowsInformation\WindowsInformation\obj\Debug\WindowsInformation.csprojAssemblyReference.cache
+C:\Users\Bruger\source\repos\WindowsInformation\WindowsInformation\obj\Debug\WindowsInformation.csproj.CoreCompileInputs.cache
+C:\Users\Bruger\source\repos\WindowsInformation\WindowsInformation\obj\Debug\WindowsInformation.dll
+C:\Users\Bruger\source\repos\WindowsInformation\WindowsInformation\obj\Debug\WindowsInformation.pdb
+C:\Users\Bruger\Documents\WindowsInformation\WindowsInformation\WindowsInformation\bin\Debug\WindowsInformation.dll
+C:\Users\Bruger\Documents\WindowsInformation\WindowsInformation\WindowsInformation\bin\Debug\WindowsInformation.pdb
+C:\Users\Bruger\Documents\WindowsInformation\WindowsInformation\WindowsInformation\obj\Debug\WindowsInformation.csprojAssemblyReference.cache
+C:\Users\Bruger\Documents\WindowsInformation\WindowsInformation\WindowsInformation\obj\Debug\WindowsInformation.csproj.CoreCompileInputs.cache
+C:\Users\Bruger\Documents\WindowsInformation\WindowsInformation\WindowsInformation\obj\Debug\WindowsInformation.dll
+C:\Users\Bruger\Documents\WindowsInformation\WindowsInformation\WindowsInformation\obj\Debug\WindowsInformation.pdb

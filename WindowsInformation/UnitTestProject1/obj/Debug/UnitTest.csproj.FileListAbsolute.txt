@@ -1,0 +1,16 @@
+C:\Users\Bruger\Documents\WindowsInformation\WindowsInformation\UnitTestProject1\obj\Debug\UnitTest.csprojAssemblyReference.cache
+C:\Users\Bruger\Documents\WindowsInformation\WindowsInformation\UnitTestProject1\obj\Debug\UnitTest.csproj.CoreCompileInputs.cache
+C:\Users\Bruger\Documents\WindowsInformation\WindowsInformation\UnitTestProject1\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.dll
+C:\Users\Bruger\Documents\WindowsInformation\WindowsInformation\UnitTestProject1\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.Interface.dll
+C:\Users\Bruger\Documents\WindowsInformation\WindowsInformation\UnitTestProject1\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.dll
+C:\Users\Bruger\Documents\WindowsInformation\WindowsInformation\UnitTestProject1\bin\Debug\UnitTestProject1.dll
+C:\Users\Bruger\Documents\WindowsInformation\WindowsInformation\UnitTestProject1\bin\Debug\UnitTestProject1.pdb
+C:\Users\Bruger\Documents\WindowsInformation\WindowsInformation\UnitTestProject1\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.dll
+C:\Users\Bruger\Documents\WindowsInformation\WindowsInformation\UnitTestProject1\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.dll
+C:\Users\Bruger\Documents\WindowsInformation\WindowsInformation\UnitTestProject1\bin\Debug\WindowsInformation.dll
+C:\Users\Bruger\Documents\WindowsInformation\WindowsInformation\UnitTestProject1\bin\Debug\WindowsInformation.pdb
+C:\Users\Bruger\Documents\WindowsInformation\WindowsInformation\UnitTestProject1\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.xml
+C:\Users\Bruger\Documents\WindowsInformation\WindowsInformation\UnitTestProject1\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.xml
+C:\Users\Bruger\Documents\WindowsInformation\WindowsInformation\UnitTestProject1\obj\Debug\UnitTest.csproj.CopyComplete
+C:\Users\Bruger\Documents\WindowsInformation\WindowsInformation\UnitTestProject1\obj\Debug\UnitTestProject1.dll
+C:\Users\Bruger\Documents\WindowsInformation\WindowsInformation\UnitTestProject1\obj\Debug\UnitTestProject1.pdb
