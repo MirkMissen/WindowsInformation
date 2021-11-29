@@ -12,4 +12,3 @@ C:\Users\mkr.BELMAN\Documents\WindowsInformation\WindowsInformation\Tests\obj\Re
 C:\Users\mkr.BELMAN\Documents\WindowsInformation\WindowsInformation\Tests\obj\Release\net472\Tests.csproj.CopyComplete
 C:\Users\mkr.BELMAN\Documents\WindowsInformation\WindowsInformation\Tests\obj\Release\net472\Tests.dll
 C:\Users\mkr.BELMAN\Documents\WindowsInformation\WindowsInformation\Tests\obj\Release\net472\Tests.pdb
-C:\Users\mkr.BELMAN\Documents\WindowsInformation\WindowsInformation\Tests\obj\Release\net472\Tests.csproj.AssemblyReference.cache

@@ -1,18 +1,11 @@
-﻿using System;
-using System.Collections.Generic;
-using System.IO;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using Microsoft.Owin.Hosting;
+﻿using WindowsService.NetFramework;
 using Topshelf;
 
-namespace WindowsService.NetFramework {
-
+namespace WindowsInformationApi {
 
     class Program {
 
-        private const string ServiceName = "WindowsInformationRestApi";
+        private const string ServiceName = "OpenFilesRestApi";
 
         static void Main(string[] args) {
 
