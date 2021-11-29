@@ -6,8 +6,8 @@ Web API is available on default port: 8085
 
 Current features:
 - Get network files currently in use.
-  -     <b>http://{hostname}/api/file</b>           retrieves information for all files.
-  -     <b>http://{hostname}/api/file?path=x</b>    retrieves information for path x.
+  - <b>http://{hostname}/api/file</b>           retrieves information for all files.
+  - <b>http://{hostname}/api/file?path=x</b>    retrieves information for path x.
 
 
 # Arguments
