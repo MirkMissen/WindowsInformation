@@ -1,0 +1,2 @@
+C:\Users\mkr.BELMAN\Documents\WindowsInformation\WindowsInformation\WindowsService\WindowsInformationApi\obj\Release\WindowsInformationApi.csproj.AssemblyReference.cache
+C:\Users\mkr.BELMAN\Documents\WindowsInformation\WindowsInformation\WindowsService\WindowsInformationApi\obj\Release\WindowsInformationApi.csproj.CoreCompileInputs.cache

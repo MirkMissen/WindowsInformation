@@ -1,0 +1,17 @@
+C:\Users\mkr.BELMAN\Documents\WindowsInformation\WindowsInformation\WindowsService\WindowsInformationApi\bin\Debug\WindowsInformationApi.exe.config
+C:\Users\mkr.BELMAN\Documents\WindowsInformation\WindowsInformation\WindowsService\WindowsInformationApi\bin\Debug\WindowsInformationApi.exe
+C:\Users\mkr.BELMAN\Documents\WindowsInformation\WindowsInformation\WindowsService\WindowsInformationApi\bin\Debug\WindowsInformationApi.pdb
+C:\Users\mkr.BELMAN\Documents\WindowsInformation\WindowsInformation\WindowsService\WindowsInformationApi\bin\Debug\WindowsInformation.dll
+C:\Users\mkr.BELMAN\Documents\WindowsInformation\WindowsInformation\WindowsService\WindowsInformationApi\bin\Debug\WindowsInformation.pdb
+C:\Users\mkr.BELMAN\Documents\WindowsInformation\WindowsInformation\WindowsService\WindowsInformationApi\bin\Debug\Microsoft.Owin.xml
+C:\Users\mkr.BELMAN\Documents\WindowsInformation\WindowsInformation\WindowsService\WindowsInformationApi\bin\Debug\Microsoft.Owin.Host.HttpListener.xml
+C:\Users\mkr.BELMAN\Documents\WindowsInformation\WindowsInformation\WindowsService\WindowsInformationApi\bin\Debug\Microsoft.Owin.Hosting.xml
+C:\Users\mkr.BELMAN\Documents\WindowsInformation\WindowsInformation\WindowsService\WindowsInformationApi\bin\Debug\System.Net.Http.Formatting.xml
+C:\Users\mkr.BELMAN\Documents\WindowsInformation\WindowsInformation\WindowsService\WindowsInformationApi\bin\Debug\System.Web.Http.xml
+C:\Users\mkr.BELMAN\Documents\WindowsInformation\WindowsInformation\WindowsService\WindowsInformationApi\bin\Debug\System.Web.Http.Owin.xml
+C:\Users\mkr.BELMAN\Documents\WindowsInformation\WindowsInformation\WindowsService\WindowsInformationApi\bin\Debug\Topshelf.xml
+C:\Users\mkr.BELMAN\Documents\WindowsInformation\WindowsInformation\WindowsService\WindowsInformationApi\obj\Debug\WindowsInformationApi.csproj.AssemblyReference.cache
+C:\Users\mkr.BELMAN\Documents\WindowsInformation\WindowsInformation\WindowsService\WindowsInformationApi\obj\Debug\WindowsInformationApi.csproj.CoreCompileInputs.cache
+C:\Users\mkr.BELMAN\Documents\WindowsInformation\WindowsInformation\WindowsService\WindowsInformationApi\obj\Debug\WindowsInformationApi.csproj.CopyComplete
+C:\Users\mkr.BELMAN\Documents\WindowsInformation\WindowsInformation\WindowsService\WindowsInformationApi\obj\Debug\WindowsInformationApi.exe
+C:\Users\mkr.BELMAN\Documents\WindowsInformation\WindowsInformation\WindowsService\WindowsInformationApi\obj\Debug\WindowsInformationApi.pdb

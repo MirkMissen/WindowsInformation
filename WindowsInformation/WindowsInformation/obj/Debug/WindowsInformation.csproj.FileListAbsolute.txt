@@ -10,3 +10,8 @@ C:\Users\Bruger\Documents\WindowsInformation\WindowsInformation\WindowsInformati
 C:\Users\Bruger\Documents\WindowsInformation\WindowsInformation\WindowsInformation\obj\Debug\WindowsInformation.csproj.CoreCompileInputs.cache
 C:\Users\Bruger\Documents\WindowsInformation\WindowsInformation\WindowsInformation\obj\Debug\WindowsInformation.dll
 C:\Users\Bruger\Documents\WindowsInformation\WindowsInformation\WindowsInformation\obj\Debug\WindowsInformation.pdb
+C:\Users\mkr.BELMAN\Documents\WindowsInformation\WindowsInformation\WindowsInformation\bin\Debug\WindowsInformation.dll
+C:\Users\mkr.BELMAN\Documents\WindowsInformation\WindowsInformation\WindowsInformation\bin\Debug\WindowsInformation.pdb
+C:\Users\mkr.BELMAN\Documents\WindowsInformation\WindowsInformation\WindowsInformation\obj\Debug\WindowsInformation.csproj.CoreCompileInputs.cache
+C:\Users\mkr.BELMAN\Documents\WindowsInformation\WindowsInformation\WindowsInformation\obj\Debug\WindowsInformation.dll
+C:\Users\mkr.BELMAN\Documents\WindowsInformation\WindowsInformation\WindowsInformation\obj\Debug\WindowsInformation.pdb
