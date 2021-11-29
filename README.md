@@ -1,6 +1,6 @@
 # WindowsInformation
 
-Attempt to make general windows information available using RESAT API in C#.
+Attempt to make general windows information available using REST API in C#.
 
 Web API is available on port: 8085
 
