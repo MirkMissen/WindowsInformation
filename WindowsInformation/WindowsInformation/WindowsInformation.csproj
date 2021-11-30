@@ -41,6 +41,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Files\FileLockFilter.cs" />
     <Compile Include="Files\OpenFiles.cs" />
     <Compile Include="Files\Models\FileLock.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

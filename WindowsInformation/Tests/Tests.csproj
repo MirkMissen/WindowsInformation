@@ -7,13 +7,20 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="Integration\**" />
+    <EmbeddedResource Remove="Integration\**" />
+    <None Remove="Integration\**" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="NUnit" Version="3.12.0" />
     <PackageReference Include="NUnit3TestAdapter" Version="3.16.1" />
     <PackageReference Include="Microsoft.NET.Test.Sdk" Version="16.5.0" />
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Integration\" />
+    <ProjectReference Include="..\WindowsInformation\WindowsInformation.csproj" />
+    <ProjectReference Include="..\WindowsService\WindowsInformationApi\OpenFilesRestApi.csproj" />
   </ItemGroup>
 
 </Project>

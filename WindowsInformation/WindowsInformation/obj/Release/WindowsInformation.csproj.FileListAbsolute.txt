@@ -3,3 +3,4 @@ C:\Users\mkr.BELMAN\Documents\WindowsInformation\WindowsInformation\WindowsInfor
 C:\Users\mkr.BELMAN\Documents\WindowsInformation\WindowsInformation\WindowsInformation\obj\Release\WindowsInformation.csproj.CoreCompileInputs.cache
 C:\Users\mkr.BELMAN\Documents\WindowsInformation\WindowsInformation\WindowsInformation\obj\Release\WindowsInformation.dll
 C:\Users\mkr.BELMAN\Documents\WindowsInformation\WindowsInformation\WindowsInformation\obj\Release\WindowsInformation.pdb
+C:\Users\mkr.BELMAN\Documents\WindowsInformation\WindowsInformation\WindowsInformation\obj\Release\WindowsInformation.csproj.AssemblyReference.cache
