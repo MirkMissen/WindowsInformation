@@ -7,7 +7,7 @@ Web API is available on default port: 8085
 # Current features:
 Get network files currently in use.
 
-    http://{hostname}/api/file
+    http://{hostname:port}/api/file
 
 Headers [Key: Value]:
 
@@ -22,6 +22,8 @@ Using TopShelf argument syntax: "-foobar:Test"
 
 # System configuration
 
-For files to be monitored, ensure **Maintain Objects List** is enabled. 
+For files to be monitored, ensure **Maintain Objects List** is enabled.
 
-    Execute "openfiles /local on" to ensure this.
+Execute following command in CMD:
+
+    openfiles.exe /local on
