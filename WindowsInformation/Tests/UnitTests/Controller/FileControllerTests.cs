@@ -34,6 +34,7 @@ namespace Tests.UnitTests.Controller {
 
             Assert.Contains(_openFiles.FileLock01, files);
             Assert.Contains(_openFiles.FileLock02, files);
+            Assert.AreEqual(files.Length, 2);
         }
 
         [Test]
@@ -45,6 +46,7 @@ namespace Tests.UnitTests.Controller {
             var files = _sut.GetFiles();
 
             Assert.Contains(_openFiles.FileLock01, files);
+            Assert.AreEqual(files.Length, 1);
         }
 
         [Test]
@@ -56,6 +58,7 @@ namespace Tests.UnitTests.Controller {
             var files = _sut.GetFiles();
 
             Assert.Contains(_openFiles.FileLock02, files);
+            Assert.AreEqual(files.Length, 1);
         }
 
         [Test]
@@ -67,6 +70,8 @@ namespace Tests.UnitTests.Controller {
             var files = _sut.GetFiles();
 
             Assert.Contains(_openFiles.FileLock01, files);
+            Assert.AreEqual(files.Length, 1);
+
         }
 
         [Test]
@@ -78,6 +83,7 @@ namespace Tests.UnitTests.Controller {
             var files = _sut.GetFiles();
 
             Assert.Contains(_openFiles.FileLock02, files);
+            Assert.AreEqual(files.Length, 1);
         }
 
         private class OpenFilesFaked : IOpenFiles {

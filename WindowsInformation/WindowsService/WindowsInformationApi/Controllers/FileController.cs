@@ -32,13 +32,13 @@ namespace OpenFilesRestApi.Controllers {
             if (headers.TryGetValues(PathHeader, out var pathValues))
             {
                 foreach (var element in pathValues) {
-                    fileLocks = fileLocks.Select(x => _filter.FilterPath(fileLocks, element)).SelectMany(x => x).ToArray();
+                    fileLocks = _filter.FilterPath(fileLocks, element).ToArray();
                 }
             }
 
             if (headers.TryGetValues(FileNameHeader, out var fileNameValues)) {
                 foreach (var element in fileNameValues) {
-                    fileLocks = fileLocks.Select(x => _filter.FilterFileName(fileLocks, element)).SelectMany(x => x).ToArray();
+                    fileLocks = _filter.FilterFileName(fileLocks, element).ToArray();
                 }
             }
             
