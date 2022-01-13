@@ -38,7 +38,7 @@ namespace OpenFilesRestApi.Controllers {
 
             if (headers.TryGetValues(FileNameHeader, out var fileNameValues)) {
                 foreach (var element in fileNameValues) {
-                    fileLocks = fileLocks.Select(x => _filter.FilterPath(fileLocks, element)).SelectMany(x => x).ToArray();
+                    fileLocks = fileLocks.Select(x => _filter.FilterFileName(fileLocks, element)).SelectMany(x => x).ToArray();
                 }
             }
             
