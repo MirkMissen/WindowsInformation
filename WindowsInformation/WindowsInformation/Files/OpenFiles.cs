@@ -10,7 +10,7 @@ using WindowsInformation.Files.Models;
 
 namespace WindowsInformation.Files {
     
-    public class OpenFiles {
+    public class OpenFiles : IOpenFiles {
 
         /// <summary>
         /// Defines the path of the 'OpenFile' executable.

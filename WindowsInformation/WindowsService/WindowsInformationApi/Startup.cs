@@ -5,6 +5,7 @@ using System.Net.Http.Headers;
 using System.Text;
 using System.Threading.Tasks;
 using System.Web.Http;
+using WindowsInformation.Files;
 using Owin;
 
 namespace WindowsService.NetFramework {
@@ -21,7 +22,7 @@ namespace WindowsService.NetFramework {
             var config = new HttpConfiguration();
 
             config.Formatters.JsonFormatter.SupportedMediaTypes.Add(new MediaTypeHeaderValue("text/html"));
-
+            
             config.Routes.MapHttpRoute(
                 "DefaultApi",
                 "api/{controller}/{id}",
