@@ -68,6 +68,20 @@ namespace Tests.UnitTests.WindowsInformation {
             Assert.IsTrue(_sut.FilterFileName(array, "somethingElse.pdf").Length == 0);
         }
 
+        [Test]
+        public void IgnoreCase() {
+            var path1 = @"C:/TEST/SOMETHING.PDF";
+            var path2 = @"c:/test/something.pdf";
+
+            var l1 = new FileLock() {Path = path1};
+            var l2 = new FileLock() {Path = path2};
+
+            var array = new FileLock[] {l1, l2};
+
+            Assert.IsTrue(_sut.FilterFileName(array, "SoMeThInG.pDf").Length == array.Length);
+            Assert.IsTrue(_sut.FilterFileName(array, "something.pdf").Length == array.Length);
+            Assert.IsTrue(_sut.FilterFileName(array, "SOMETHING.PDF").Length == array.Length);
+        }
 
 
     }
