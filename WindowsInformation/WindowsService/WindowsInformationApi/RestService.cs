@@ -16,7 +16,6 @@ namespace WindowsService.NetFramework {
 
         public void Stop() => _app?.Dispose();
 
-
         public RestService(int port) {
             _address = $"http://*:{port}";
         }

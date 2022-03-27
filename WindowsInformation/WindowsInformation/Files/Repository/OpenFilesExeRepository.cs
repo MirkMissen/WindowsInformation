@@ -1,16 +1,19 @@
 ﻿using System;
-using System.Collections;
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.IO;
-using System.Threading.Tasks;
 using System.Linq;
-using System.Security.Policy;
+using System.Security.Cryptography.X509Certificates;
+using System.Text;
+using System.Threading.Tasks;
 using WindowsInformation.Files.Models;
 
-namespace WindowsInformation.Files {
-    
-    public class OpenFiles : IOpenFiles {
+namespace WindowsInformation.Files.Repository {
+
+    /// <summary>
+    /// Defines the repository that collects 
+    /// </summary>
+    public class OpenFilesExeRepository : IFileLockRepository {
 
         /// <summary>
         /// Defines the path of the 'OpenFile' executable.
@@ -63,29 +66,38 @@ namespace WindowsInformation.Files {
             Path = 6
         }
 
-        public OpenFiles() { }
+        /// <summary>
+        /// Creates a new instance with default arguments.
+        /// </summary>
+        public OpenFilesExeRepository() {
 
-        public OpenFiles(string openfilesExePath) {
-            this.Executable = openfilesExePath;
+        }
+
+        /// <summary>
+        /// Creates a new instance with modified path of openfiles.exe.
+        /// </summary>
+        /// <param name="executionPath"></param>
+        public OpenFilesExeRepository(string executionPath) {
+            this.Executable = executionPath;
         }
 
         /// <summary>
         /// Retrieves a collection of all locks on this machine.
         /// </summary>
         /// <returns></returns>
-        public IEnumerable<FileLock> GetFileLocks() {
+        public FileLock[] GetFileLocks() {
             var process = this.GetProcess();
             var rows = GetProcessOutput(process);
-            var output = DeMarshalFileLocks(rows.ToList());
-            return output;
+            var output = UnMarshalFileLocks(rows.ToList());
+            return output.ToArray();
         }
-        
+
         /// <summary>
-        /// Attempts to de-marshal the given data.
+        /// Attempts to un-marshal the given data.
         /// </summary>
         /// <param name="data">Defines the data rows of the console.</param>
         /// <returns></returns>
-        public IEnumerable<FileLock> DeMarshalFileLocks(List<string> data) {
+        public IEnumerable<FileLock> UnMarshalFileLocks(List<string> data) {
 
             // attempts to find the start of the data entries.
             var headerIndex = data.FindIndex((x) => x.Contains(HEADER));
@@ -115,8 +127,6 @@ namespace WindowsInformation.Files {
                 var openMode = entries[(int) DataEntries.OpenMode];
                 var path = Path.GetFullPath(entries[(int) DataEntries.Path]);
 
-                Debug.WriteLine(path);
-
                 var fileLock = new FileLock() {
                     AccessedBy = accessedBy,
                     Hostname = hostName,
@@ -131,17 +141,16 @@ namespace WindowsInformation.Files {
 
             return output;
         }
-
         /// <summary>
         /// Retrieves the output from the process as rows.
         /// </summary>
         /// <param name="process">Defines the process to retrieve output from.</param>
         /// <returns></returns>
         private string[] GetProcessOutput(Process process) {
-            
-
             var output = process.StandardOutput.ReadToEnd();
-            var error = process.StandardError.ReadToEnd();
+            
+            // Currently unused, but available.
+            //var error = process.StandardError.ReadToEnd();
 
             var rows = output.Split(NEW_LINE);
             return rows;
@@ -167,9 +176,6 @@ namespace WindowsInformation.Files {
             process.Start();
             return process;
         }
-
-
-
 
     }
 }

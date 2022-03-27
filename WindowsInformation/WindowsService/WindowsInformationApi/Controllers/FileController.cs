@@ -4,7 +4,9 @@ using System.IO;
 using System.Linq;
 using System.Web.Http;
 using WindowsInformation.Files;
+using WindowsInformation.Files.Filter;
 using WindowsInformation.Files.Models;
+using WindowsInformation.Files.Repository;
 
 namespace OpenFilesRestApi.Controllers {
     public class FileController : ApiController {
@@ -12,36 +14,40 @@ namespace OpenFilesRestApi.Controllers {
         public const string PathHeader = "Path";
         public const string FileNameHeader = "FileName";
 
-        private readonly FileLockFilter _filter = new FileLockFilter();
+        /// <summary>
+        /// Defines the method used to compare files.
+        /// </summary>
+        public readonly StringComparison StringComparison = StringComparison.InvariantCultureIgnoreCase;
+        
+        private readonly IOpenFilesService _openFilesService;
 
-        private readonly IOpenFiles _openFiles;
-
-        public FileController(IOpenFiles openFiles) {
-            _openFiles = openFiles;
+        public FileController(IOpenFilesService openFilesService) {
+            _openFilesService = openFilesService;
         }
 
         public FileController() {
-            _openFiles = new OpenFiles();
+            var temp = @"C:\Windows\System32\openfiles.exe";
+            this._openFilesService = new OpenFilesServiceService(new OpenFilesExeRepository(temp));
         }
 
         public FileLock[] GetFiles() {
 
-            var fileLocks = _openFiles.GetFileLocks().ToArray();
             var headers = this.Request.Headers;
+            var filters = new List<IFileFilter>();
 
-            if (headers.TryGetValues(PathHeader, out var pathValues))
-            {
-                foreach (var element in pathValues) {
-                    fileLocks = _filter.FilterPath(fileLocks, element).ToArray();
+            if (headers.TryGetValues(PathHeader, out var pathValues)) {
+                foreach (var pathValue in pathValues) {
+                    filters.Add(new FilePathFilter(pathValue, this.StringComparison));
                 }
             }
 
             if (headers.TryGetValues(FileNameHeader, out var fileNameValues)) {
-                foreach (var element in fileNameValues) {
-                    fileLocks = _filter.FilterFileName(fileLocks, element).ToArray();
+                foreach (var fileName in fileNameValues) {
+                    filters.Add(new FileNameFilter(fileName, this.StringComparison));
                 }
             }
-            
+
+            var fileLocks = _openFilesService.GetFileLocks(filters.ToArray());
             return fileLocks;
         }
 

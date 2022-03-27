@@ -41,10 +41,15 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Files\FileLockFilter.cs" />
-    <Compile Include="Files\IOpenFiles.cs" />
-    <Compile Include="Files\OpenFiles.cs" />
+    <Compile Include="Files\Filter\FileNameFilter.cs" />
+    <Compile Include="Files\Filter\FilePathFilter.cs" />
+    <Compile Include="Files\Filter\IFileFilter.cs" />
+    <Compile Include="Files\IOpenFilesService.cs" />
+    <Compile Include="Files\OpenFilesServiceService.cs" />
     <Compile Include="Files\Models\FileLock.cs" />
+    <Compile Include="Files\Repository\FakedFileRepository.cs" />
+    <Compile Include="Files\Repository\IFileLockRepository.cs" />
+    <Compile Include="Files\Repository\OpenFilesExeRepository.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup />
